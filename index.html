@@ -1,0 +1,365 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Task16</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-F3w7mX95PdgyTmZZMECAngseQB83DfGTowi0iMjiWaeVhAn4FJkqJByhZMI3AhiU" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.css" integrity="sha512-5A8nwdMOWrSz20fDsjczgUidUBR8liPYU+WymTZP1lmY9G6Oc7HlZv156XqnsgNUzTyMefFTcsFH/tnJE/+xBg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" integrity="sha512-SfTiTlX6kk+qitfevl/7LibUOeJWlt9rbyDn92a1DqWOw9vWG2MFoays0sgObmWazO5BQPiFucnnEAjpAB+/Sw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="styles.css">
+<style>
+  body{
+    background-color: rgb(56, 56, 56);
+  }
+  .container {
+    position: relative;
+  }
+  
+  .text-block {
+    position: absolute;
+    bottom: 20px;
+    right: 20px;
+    background-color: black;
+    color: white;
+    padding-left: 20px;
+    padding-right: 20px;
+  }
+  .flex-class{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    padding-top: 50px;
+    padding-bottom: 50px;
+  }
+  .flex-class .head{
+    font-size: 60px;
+    font-weight: 800;
+    padding-left: 20px;
+    color: rgb(219, 25, 25);
+
+  }
+  h2{
+    font-weight: bolder;
+  }
+  .flex-cont{
+    display: flex;
+    padding: 0px 130px;
+
+  }
+  .flex-cont .first{
+    width: 50%;
+    background-color: orange;
+    text-align: center;  
+    padding: 50px 0px;
+    color: white;
+    
+  }
+  .flex-cont .second{
+    width: 50%;
+    background-color: aqua;
+    text-align: center;
+    padding: 50px 0px;
+    color: white; 
+  }
+  .flex-cont .second .img{
+    font-size: 30px;
+    font-weight: bolder;
+  }
+  .flex-cont1{
+    display: flex;
+    padding: 100px 130px;
+    margin-bottom: 0px;
+  }
+  .flex-cont1 .third{
+    width: 100%;
+    background-color: red;  
+    padding: 50px 70px;
+    color: white;
+  }
+  .flex-cont2{
+    display: flex;
+    padding: 0px 130px;
+    margin-bottom: 100px;
+  }
+  .flex-cont2 .fourth{
+    width: 50%;
+    background-color: aqua; 
+    padding: 50px 100px;
+    color: white;
+    
+  }
+  .flex-cont2 .fifth{
+    width: 50%;
+    background-color: aqua;
+    padding: 50px 80px;
+    color: white; 
+  }
+  .flex-cont3{
+    display: flex;
+    padding: 0px 130px;
+    margin-bottom: 100px;
+  }
+  .flex-cont3 .sixth{
+    width: 50%;
+    text-align: center;
+    background-color: red;  
+    padding: 50px 70px;
+    color: white;
+  }
+  .flex-cont3 .seventh{
+    width: 50%;
+    text-align: center;
+    background-color: orange;  
+    padding: 50px 70px;
+    color: white;
+  }
+  .flex-cont4{
+    display: flex;
+    padding: 0px 130px;
+    margin-bottom: 100px;
+  }
+  .flex-cont4 .eigth{
+    width: 70%;
+    text-align: center;
+    background-color: aqua;  
+    padding: 50px 70px;
+    color: white;
+  }
+  .flex-cont4 .ninth{
+    width: 30%;
+    align-content: center;
+    background-color: aqua;  
+    padding: 50px 70px;
+    color: white;
+  }
+  .flex-cont5{
+    display: flex;
+    padding: 0px 130px;
+    margin-bottom: 100px;
+  }
+  .flex-cont5 .tenth{
+    width: 70%;
+    text-align: center;
+    background-color: orange;  
+    padding: 50px 70px;
+    color: white;
+  }
+  .flex-cont5 .eleventh{
+    width: 30%;
+    align-content: center;
+    background-color: orange;  
+    padding: 50px 70px;
+    color: white;
+  }
+  .flex-cont6{
+    display: flex;
+    padding: 0px 130px;
+    margin-bottom: 100px;
+  }
+  .flex-cont6 .twelth{
+    width: 50%;
+    text-align: center;
+    background-color: aqua;  
+    padding: 50px 70px;
+    color: white;
+  }
+  .flex-cont6 .thirteenth{
+    width: 50%;
+    text-align: center;
+    background-color: red;  
+    padding: 50px 70px;
+    color: white;
+  }
+
+</style>
+  </head>
+<body>
+    <h3>Task1</h3>
+<div class="flex-class">
+  <div class="imag"><img src="child.png" style="height: 140px; width: 140px;"></div>
+  <div class="head">OBESITY<br><h5 style="font-weight: bold; color: white; padding-left: 8px;">CHILDHOOD STATICS</h5></div>
+</div>
+<div class="flex-cont">
+  <div class="first">
+    <div class="img"><img src="child.png" style="margin: 0px 10px; height: 30px; width: 30px;"></div>
+  <div class="text1" style="font-size: 35px; font-weight: bold;">1 IN 3</div>
+  <div style="font-size: 20px;">Childern and <br>adolescents(ages 2-19)</div>
+  <div style="font-weight: bolder; font-size: 25px;">ARE OVERWEIGHT <br> OR OBESE</div>
+  <div>and almost NONE meet<br>recomended healty diet and<br>physical activity amount.</div>
+</div>
+<div class="second">
+  <div>A estimated</div>
+  <div class="img"><img src="child.png" style="margin: 0px 10px; height: 30px; width: 30px;">12.5</div>
+  <div style="font-weight: bolder; font-size: 30px;">MILLION</div>
+  <div>childern (ages 5years or<br>younger), spend</div>
+  <div style="font-weight: bolder; font-size: 20px;">33 HOURS / WEEK</div>
+  <div>in <b><u>child care setting</u></b> and <br> consume nearly all of their <br> daily calories.</div>
+  </div>
+</div>
+<div class="flex-cont1">
+  <div class="third">
+  <div style="font-weight: bolder; font-size: 50px;">OBESITY IS LINKED<br>TO MORE CHRONIC<br>CONDITIONS THAN:<img src="child.png" style="margin-left: 100px; height: 50px; width: 50px;"></div>
+<div style="padding-top: 50px; font-size: 28px;">increasing the risk of more than <b><u>20 preventable diseases.</u></b>including sleep<br>apena, asthma, heart disease, Type 2 diabetes, osteoarthritis, highblood<br>pressure and high-cholesterol stroke.</div>  
+</div>
+</div>
+<div class="flex-cont2">
+  <div class="fourth">
+    <div style="font-size: 40px; font-weight: bolder;">RISK FACTORS <img src="child.png" style="margin: 0px 10px; height: 40px; width: 40px;"></div>
+  <div style="padding-top: 20px; font-size: 20px;">Childern in their early teens who are<br>obese and who have <b><u>high triglyceride<br> levels</u></b>have arteries similar to those<br>of 45-years olds.</div>
+<div style="padding-top: 20px; font-size: 20px;">Obese childern as young as age 3 <br> show indicators for<b><u>developing heart<br>disease</u></b>later in life</div>
+</div>
+<div class="fifth">
+  <div style="padding-top: 80px; font-size: 20px;">Childern who are overweight from<br>the ages of 7 to 13 may develop<br><u>heart disease</u><b>as early as age 25.</b></div>
+<div style="padding-top: 20px; font-size: 20px;">Obese childern are twice as likely<br>to <b><u>die</u></b> before age 55 than their<br>slimmer peers.</div>
+</div>
+</div>
+<div class="flex-cont3">
+  <div class="sixth">
+   <div style="font-size: 30px; font-weight: bolder;">FRENCH FRIES</div>
+   <div>are the most common vegetable<br>that childern eat, comprising</div>
+<div style="font-weight: bolder; font-size: 30px;">25%</div>
+<div>of their vegetable intake</div>
+<div class="img"><img src="child.png" style="margin: 30px 10px; height: 50px; width: 50px;"></div>
+  </div>
+<div class="seventh">
+  <div class="img"><img src="child.png" style="margin: 30px 10px; height: 50px; width: 50px;"></div>
+  <div style="font-size: 30px; font-weight: bolder;">juice</div>
+  <div>(which may lack important fiber<br>found in whole fruit) makes up </div>
+  <div style="font-size: 50px; font-weight: bolder;">40%</div>
+  <div>of childern's daily fruit intake</div>
+</div>
+</div>
+</div>
+<div class="flex-cont4">
+  <div class="eigth">
+    <div style="font-size: 60px;font-weight: bolder;">40% - 50% OF <br> TODDLERS</div>
+  <div>watch <b><u>more</u></b> television than is recomended</div> 
+  </div>
+ <div class="ninth">
+  <div class="img"><img src="child.png" style="height: 100px; width: 100px;margin-top: 50px;"></div>
+ </div>
+</div>
+<div class="flex-cont5">
+  <div class="tenth">
+    <div style="font-size: 60px;font-weight: bolder;">NEARLY 1/2 OF<br>PRESCHOOLERS</div>
+  <div>don't get enough <b><u>physical activity</u></b></div> 
+  </div>
+ <div class="eleventh">
+  <div class="img"><img src="child.png" style="height: 100px; width: 100px;margin-top: 50px;"></div>
+ </div>
+</div>
+<div class="flex-cont6">
+  <div class="twelth">
+    <div class="img"><img src="child.png" style="height: 100px; width: 100px;"></div>
+    <div style="padding-top: 20PX;">The <b><u>costs</u></b>of obesity in the<br>United States is staggering<br>totaling about</div>
+    <div style="font-weight: bolder; font-size: 50px;">$147<br>BILLON</div>
+  </div>
+<div class="thirteenth">
+ <div style="font-weight: bolder; font-size: 30px;" >CHILDERN WHO <br>EAT HEALTHY<br>FOODS AND GET<br>DAILY PHYSICAL<br>ATIVITY HAVE:</div>
+<div style="padding-top: 20px;">Fewer school absences<br>Higher academic achievements<br>Higher self-esteem<br>Fewer behavioral problems</div>
+</div>
+</div>
+</div>
+</body>
+</html>
+
+<!-- Task 2 -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/css/bootstrap.min.css" integrity="sha384-B0vP5xmATw1+K9KRQjQERJvTumQW0nPEzvF6L/Z6nronJ3oUOFUFpCjEUQouq2+l" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" integrity="sha512-SfTiTlX6kk+qitfevl/7LibUOeJWlt9rbyDn92a1DqWOw9vWG2MFoays0sgObmWazO5BQPiFucnnEAjpAB+/Sw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+<style>
+.box{
+border: solid black 1px;
+font-size: large;
+text-align: center;
+margin: 10px;
+
+}
+.box1{
+    text-align:end;
+    border: black solid 1px;
+    margin: 20px;
+    padding: 20px;
+    position: relative;
+   
+
+}
+.fa{
+    color: brown;
+    align-content: top;
+    bottom:  80px;
+left: 25px;
+    font-size: 200px;
+    margin: 20px;
+    padding: 5px;
+    position: absolute;
+
+}
+</style>
+
+</head>
+<body>
+    <h3>Task2</h3>
+    <div class="container">
+        <div class="row">
+            <div class="col">
+                <div class="box">
+                    <h1>Events</h1>
+                    <h4>Number of available seats</h4>
+                   
+                    <div class="box1">
+
+                        <div>
+                            <img style="width: 200px; height: 200px;display: flex; float: left;" src="child.png" alt="" srcset="">
+                        </div>
+
+                        <label for="text">Name       :</label>
+                        <input type="text"id="name" name="Name"><br>
+                        <label for="email">Email      :</label>
+                        <input type="email"id="email" name="email"><br>
+                        
+                        <label for="text">Phone Number:</label>
+                        <input type="text"id="phone" name="phone"><br>
+                        
+
+                        <label for="Number of seat">Number of seat:</label>
+
+                        
+
+                        <select name="number" id="number of seat"><br>
+                            <option value="">--Please choose an option--</option><br>
+                            <option value="1">1</option>
+                            <option value="2">2</option>
+                            <option value="3">3</option>
+                            <option value="4">4</option>
+                            <option value="5">5</option>
+                            <option value="6">6</option>
+                        </select><br>
+                        <label for="text">Name of Attendee :</label>
+                        <input type="text"id="name" name="name of attendee"><br>
+
+                    
+                        <button type="button" class="btn btn-dark btn-lg">Submit</button>
+                        <button type="button" class="btn btn-dark btn-lg">Cancel</button>
+                    </div>
+
+            
+                        
+                    </div>
+
+                </div>
+            
+            </div>
+        </div>
+    </div>
+</body>
+</html>
